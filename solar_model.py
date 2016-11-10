@@ -23,7 +23,7 @@ def calculate_force(body, space_objects):
         deltay= obj.y - body.y
         sin = deltay / r
         cos = deltax / r
-        F=((gravitational_constant)*(body.m)*(obj.m))/r(r**2)
+        F=((gravitational_constant)*(body.m)*(obj.m))/(r**2)
         body.Fx += F*cos # FIXME: нужно вывести формулу...
         body.Fy += F*sin  # FIXME: нужно вывести формулу...
 
